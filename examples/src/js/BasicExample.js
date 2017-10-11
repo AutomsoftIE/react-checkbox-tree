@@ -98,11 +98,16 @@ class BasicExample extends React.Component {
         };
 
         this.onCheck = this.onCheck.bind(this);
+        this.onCheckSingle = this.onCheckSingle.bind(this);
         this.onExpand = this.onExpand.bind(this);
     }
 
     onCheck(checked) {
         this.setState({ checked });
+    }
+
+    onCheckSingle(nodeId, checked) {
+        console.log("onCheckSingle:", nodeId, "checked:", checked);
     }
 
     onExpand(expanded) {
@@ -118,6 +123,7 @@ class BasicExample extends React.Component {
                 expanded={expanded}
                 nodes={nodes}
                 onCheck={this.onCheck}
+                onCheckSingle={this.onCheckSingle}
                 onExpand={this.onExpand}
             />
         );
