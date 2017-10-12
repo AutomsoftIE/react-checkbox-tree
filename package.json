@@ -1,5 +1,5 @@
 {
-  "name": "react-checkbox-tree",
+  "name": "@automsoft/react-checkbox-tree",
   "version": "1.0.1",
   "description": "A simple and elegant checkbox tree for React.",
   "author": "Jake Zatecky",
@@ -57,6 +57,9 @@
     "react-test-renderer": "^16.0.0",
     "webpack": "^3.0.0",
     "webpack-stream": "^4.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
     "classnames": "^2.2.5",
